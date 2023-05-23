@@ -1,3 +1,9 @@
+import About from "./About";
+import Education from "./Education";
+import Projects from "./Projects";
+
+import capstone from './images/capstone.png'
+
 export const summary = {
   name: "Kevin Lei",
   subheading: "Software Engineer | Based In NYC",
@@ -6,7 +12,11 @@ export const summary = {
 };
 
 export const about = {
-  text: "I'm a recent Software Bootcamp Graduate, starting to look for roles as a junior software engineer. I first got into programming as a computer engineering student at The City College of New York. As part of my curriculum, I took courses in the computer science department. The core classes I took here focused on Java, C++ & Python and taught me core computer fundamentals including topics like data structures, algorithms, & object-oriented programming. In June 2022, I enrolled into Fullstack Academy to learn more about web development technologies. There, I learned and utilized JavaScript, Node.js, the React/Redux framework & PostgreSQL to build and deploy code for two team & one solo web application projects. As of December 2022, I graduated from Fullstack Academy, and I’m excited to continue the learning process so I can build bigger and more complex applications. \nHere are some of the technologies I've been using recently:",
+  text: "<p>I'm a recent Software Bootcamp Graduate, starting to look for roles as a junior software engineer.</p> <p>I first got into programming as a computer engineering student at <a href='https://www.ccny.cuny.edu/compeng'>The City College of New York</a>. As part of my curriculum, I took courses in the computer science department. The core classes I took here focused on Java, C++ & Python and taught me core computer fundamentals including topics like data structures, algorithms, & object-oriented programming. </p> <p> In June 2022, I enrolled into <a href='https://www.fullstackacademy.com/'>Fullstack Academy</a> to learn more about web development technologies. There, I learned and utilized JavaScript, Node.js, the React/Redux framework & PostgreSQL to build and deploy code for two team & one solo web application projects. </p> <p>As of December 2022, I graduated from Fullstack Academy, and I’m excited to continue the learning process so I can build bigger and more complex applications. <p> Here are some of the technologies I've been using recently:</p>",
+};
+
+export const about2 = {
+  text:'<h1>Hello</h1>'
 };
 
 export const skills = [
@@ -27,7 +37,7 @@ export const collegeCourses = [
   "Discreate Mathematics",
   "Probability and Statistics",
   "Assembly Language",
-  "Enginerring Economics",
+  "Engineering Economics",
   "Computer Organization",
   "Digital Integrated Circuits",
   "Web Design",
@@ -40,7 +50,7 @@ export const education = [
     title: "The City College of New York",
     subheading: "B.Eng in Computer Engineering",
     description:
-      "4 Year Computer Engineering program that focuses on computer science and electrical engineering topics. Software Engineering Related Coursework include:",
+      "4 Year Computer Engineering program that focuses on computer science and electrical engineering topics. \n Software Engineering Related Coursework include:",
     courses: collegeCourses,
   },
   {
@@ -113,11 +123,20 @@ export const projects = [
       "The challenge for this project was learning how the React Dnd API works and then building the drag and drop system. It was a very time consuming process learning how the API worked and then finding what I could use in the API for the project needs. Ultimately, I had to construct roughly 10 different react components for the system to work. \n To improve the project, I can write code to allow visual components that are found on the menu to be draggable (ex: text, images).",
     demoLink: "https://menu-builder-capstone.herokuapp.com/",
     githubLink: "https://github.com/klei0229/fullstack-capstone-team-6-self",
+    image:capstone
   },
 ];
 
 export const nav = [
-  { name: "About", link: "/about" },
-  { name: "Education", link: "/education" },
-  { name: "Projects", link: "/projects" },
+  { id:1, name: "About", link: "/about" , component:<About/>},
+  { id:2, name: "Education", link: "/education",component:<Education/> },
+  { id:3, name: "Projects", link: "/projects",component:<Projects/> },
 ];
+
+
+export const links = {
+  linkedin:"https://www.linkedin.com/in/kevin-lei-cs/",
+  github:"https://github.com/klei0229",
+}
+
+

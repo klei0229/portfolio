@@ -1,38 +1,339 @@
-.App {
-  text-align: center;
+* {
+  /* border: 1px dashed red; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: white;
+  font-family: monospace;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p,
+li,
+a {
+  color: white;
+  font-family: monospace;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  background-color: #1e1f20;
+}
+button {
+  background-color: #489294;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.App {
+  background-color: #1e1f20;
+  /* background-color: white */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header {
+  background-image: url("https://musing-mcnulty-4b35c6.netlify.app/static/media/cover-image.344e72ef.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 30vh;
+  width: 100wh;
+}
+
+.nav {
+  background-color: #121212;
+  /* width: 75%; */
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.nav a {
+  text-decoration: none;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-right: 2rem;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  width: calc(100%-10rem);
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.summary {
+  background-color: #121212;
+  /* background-color: #297c81; */
+  width: 30%;
+  height: fit-content;
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+  margin-top: -10rem;
+  border-radius: 0.5rem;
+}
+.right-column {
+  margin: 0;
+  width: 70%;
+}
+.summary img {
+  width: 35%;
+  border-radius: 50%;
+}
+
+.summary h1 {
+  font-size: 32px;
+}
+.summary h3 {
+  color: #9ca3af;
+  font-size: 18px;
+}
+
+.project .social-buttons-container {
+  display: flex;
+  /* background-color: green; */
+  justify-content: right;
+  flex-wrap: wrap;
+}
+.summmary .social-buttons-container {
+  display: flex;
+  justify-content: right;
+  flex-wrap: wrap;
+}
+
+.download-button {
+  font-size: 18px;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+  /* font-family: monospace; */
+  border: none;
+}
+
+.download-button a {
+  text-decoration: none;
+}
+
+.summary p {
+  font-size: 18px;
+  text-align: left;
+  line-height: 1.7rem;
+}
+
+section {
+  background-color: #121212;
+
+  padding: 2rem;
+  border-radius: 0.5rem;
+
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+section p {
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.5;
+}
+section h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+section h3 {
+  color: #489294;
+  margin: 0;
+  font-size: 20px;
+}
+
+section h4 {
+  color: #489294;
+  margin: 0;
+  font-size: 18px;
+}
+
+li {
+  font-size: 16px;
+}
+
+.folder-icon {
+  background-color: #489294;
+  padding: 0.5rem;
+  font-size: 30px;
+  border-radius: 2rem;
+}
+
+.social-icon {
+  width: 1rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: #489294;
+  color: #214344;
+}
+.social-icon:hover {
+}
+
+br {
+  line-height: 3;
+}
+
+section a {
+  color: #489294;
+}
+
+.about ul,
+.education ul,
+.project ul {
+  display: flex;
+  flex-direction: row;
+  /* background-color: red; */
+  flex-wrap: wrap;
+  margin: 0;
+  margin-top: 0.25rem;
+  padding: 0;
+}
+
+.about li,
+.education li,
+.project li {
+  width: 49%;
+  /* background-color: green; */
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+}
+
+.bullet {
+  margin-right: 0.5rem;
+  color: #489294;
+}
+
+.project-flex-container {
+  display: flex;
+  flex-direction: row;
+  /* background-color: green; */
+}
+
+.left-col,
+.right-col {
+  padding: 1rem;
+}
+
+.left-col {
+  /* background-color: blue; */
+  width: 40%;
+}
+
+.right-col {
+  width: 60%;
+}
+
+.project button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.4rem;
+  border-radius: 50%;
+  border: none;
+  margin: 0.2rem;
+}
+
+.project .icon {
+  color: #214344;
+  font-size: 1.5rem;
+}
+
+.button-container {
+  /* background-color: green; */
+  display: flex;
+  justify-content: center;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+}
+
+.a-icon-button {
+  margin: 0;
+  /* background-color: green; */
+}
+
+.summary-btn-container {
+}
+.summary-btn {
+  background-color: #489294;
+  border: none;
+  border-radius: 50%;
+  padding: 0.5rem;
+  margin: 0.25rem;
+}
+.summary-btn:hover {
+  background-color: #ffffff;
+}
+
+.summary-a {
+  padding: 0rem;
+  display: flex;
+}
+.summary-icon {
+  color: #214344;
+  font-size: 28px;
+}
+
+.projects-a {
+  display: flex;
+}
+
+.project p {
+  /* border: 1px red solid; */
+  margin-top: 0.25rem;
+}
+
+.project ul {
+  /* background-color: pink; */
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+}
+
+.project li {
+  /* background-color: yellow; */
+  width: 49%;
+}
+
+.icon-button:hover {
+  background-color: white;
+}
+
+.a-selected {
+  color: #489294;
+}
+
+.nav-button {
+  background-color: #121212;
+  border: none;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.nav-button:hover {
+  background-color: #214344;
+  cursor: pointer;
+}
+
+.image {
+  width: 100%;
+  border-radius: .5rem;
+
+  margin-top:.5rem;
+  margin-bottom:.5rem;
 }
