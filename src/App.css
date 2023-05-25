@@ -66,8 +66,8 @@ button {
   display: flex;
   flex-direction: row;
   width: calc(100%-10rem);
-  margin-left: 10rem;
-  margin-right: 10rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 
 .summary {
@@ -83,7 +83,7 @@ button {
 }
 .right-column {
   margin: 0;
-  width: 70%;
+  width: 80%;
 }
 .summary img {
   width: 35%;
@@ -225,12 +225,12 @@ section a {
 
 .left-col,
 .right-col {
-  padding: 1rem;
+  padding: 1.5rem;
 }
 
 .left-col {
   /* background-color: blue; */
-  width: 40%;
+  width: 50%;
 }
 
 .right-col {
@@ -331,9 +331,44 @@ section a {
 }
 
 .image {
-  width: 100%;
+  width: 95%;
   border-radius: .5rem;
 
   margin-top:.5rem;
   margin-bottom:.5rem;
+}
+
+.bullet-container{
+  display:flex;
+  justify-content: center;
+
+}
+
+.dot-icon{
+  color:#489294
+}
+.dot-icon-selected{
+  color:white;
+}
+
+.row-container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-button{
+  width:fit-content;
+  height:fit-content;
+  padding:0;
+  background-color: black;
+  color:#489294;
+  cursor:pointer;
+}
+.carousel-button:hover{
+  background-color: white;
+}
+
+.carousel-button-icon{
+  font-size: 18px;
 }

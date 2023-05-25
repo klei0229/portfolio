@@ -1,4 +1,5 @@
 import React from "react";
+import ImageCarousel from "./ImageCarousel";
 import { projects } from "./data";
 import "./App.css";
 import { MdFolderCopy } from "react-icons/md";
@@ -18,8 +19,8 @@ const Projects = () => {
               <div className="left-col">
                 <h2>{project.name}</h2>
                 <h3>{project.subheading}</h3>
-                <img className="image" src={project.image}></img>
-
+                {/* <img className="image" src={project.image}></img> */}
+                <ImageCarousel imageGallery={project.images}></ImageCarousel>
                 <p>{project.description}</p>
                 <div className="social-buttons-container">
                   <button className="icon-button">

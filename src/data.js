@@ -2,7 +2,22 @@ import About from "./About";
 import Education from "./Education";
 import Projects from "./Projects";
 
-import capstone from './images/capstone.png'
+
+import snackclub0 from "./images/snackclub/login.png";
+import snackclub1 from "./images/snackclub/home1.png";
+import snackclub2 from "./images/snackclub/home2.png";
+import snackclub3 from "./images/snackclub/home3.png";
+import snackclub4 from "./images/snackclub/bundles.png";
+
+import stackathon0 from "./images/stackathon-project/stack.png";
+import stackathon1 from "./images/stackathon-project/stack2.png";
+import stackathon2 from "./images/stackathon-project/stack3.png";
+import stackathon3 from "./images/stackathon-project/stack4.png";
+
+import capstone0 from "./images/capstone/capstone0.png"
+import capstone1 from "./images/capstone/capstone1.png"
+import capstone2 from "./images/capstone/capstone2.png"
+import capstone3 from "./images/capstone/capstone3.png"
 
 export const summary = {
   name: "Kevin Lei",
@@ -16,7 +31,7 @@ export const about = {
 };
 
 export const about2 = {
-  text:'<h1>Hello</h1>'
+  text: "<h1>Hello</h1>",
 };
 
 export const skills = [
@@ -83,6 +98,15 @@ export const projects = [
       "The challenge with this project was getting familiar with Material and creating working elements in a rather short period of time. Because of this, I ended up writing many inline style declarations for components.\nIf I was to improve on my code, I would aim to adopt the DRY principle by reduce redundant inline style code.",
     demoLink: "https://snackclub-commerce.herokuapp.com/",
     githubLink: "https://github.com/klei0229/acme-shopping-2207-FSA-PT_self",
+    images: [
+      { src: snackclub0, caption: "Login Screen" },
+      { src: snackclub1, caption: "Landing Page - Top" },
+      { src: snackclub2, caption: "Landing Page - Middle" },
+      { src: snackclub3, caption: "Landing Page - Bottom" },
+      { src: snackclub4, caption: "Gallery Page" },
+    ],
+
+    // images:[snackclub0]
   },
   {
     name: "Quick Menu Builder",
@@ -103,6 +127,13 @@ export const projects = [
       "The challenge with this project was controlling the state of the React application. Due to the time constraint and scale of the project, I opted to not use Redux and as a result I ended up having a hard time scaling the project. I ended up having to tediously pass props from a parent react component down to the nested child components tree to complete the project.\n To improve on this project, I can commit to restructuring the project and use Redux to control the state of the application.",
     demoLink: "https://menu-builder-stackathon.herokuapp.com/",
     githubLink: "https://github.com/klei0229/acme_menus_1",
+    images: [
+      { src: stackathon0, caption: "Dashboard" },
+      { src: stackathon1, caption: "Initial Editing Panel" },
+      { src: stackathon2, caption: "Sample CSV Data To Parse" },
+      { src: stackathon3, caption: "Editing Panel After Loading CSV" },
+
+    ],
   },
   {
     name: "Restaurant Menu Management App",
@@ -123,20 +154,22 @@ export const projects = [
       "The challenge for this project was learning how the React Dnd API works and then building the drag and drop system. It was a very time consuming process learning how the API worked and then finding what I could use in the API for the project needs. Ultimately, I had to construct roughly 10 different react components for the system to work. \n To improve the project, I can write code to allow visual components that are found on the menu to be draggable (ex: text, images).",
     demoLink: "https://menu-builder-capstone.herokuapp.com/",
     githubLink: "https://github.com/klei0229/fullstack-capstone-team-6-self",
-    image:capstone
+    images: [
+      { src: capstone0, caption: "Dashboard" },
+      { src: capstone1, caption: "Menu Data Editing Page" },
+      { src: capstone2, caption: "Menu Style Editing Page" },
+      { src: capstone3, caption: "Menu Drag and Drop Interface" },
+    ],
   },
 ];
 
 export const nav = [
-  { id:1, name: "About", link: "/about" , component:<About/>},
-  { id:2, name: "Education", link: "/education",component:<Education/> },
-  { id:3, name: "Projects", link: "/projects",component:<Projects/> },
+  { id: 1, name: "About", link: "/about", component: <About /> },
+  { id: 2, name: "Education", link: "/education", component: <Education /> },
+  { id: 3, name: "Projects", link: "/projects", component: <Projects /> },
 ];
 
-
 export const links = {
-  linkedin:"https://www.linkedin.com/in/kevin-lei-cs/",
-  github:"https://github.com/klei0229",
-}
-
-
+  linkedin: "https://www.linkedin.com/in/kevin-lei-cs/",
+  github: "https://github.com/klei0229",
+};
