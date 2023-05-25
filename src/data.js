@@ -2,7 +2,6 @@ import About from "./About";
 import Education from "./Education";
 import Projects from "./Projects";
 
-
 import snackclub0 from "./images/snackclub/login.png";
 import snackclub1 from "./images/snackclub/home1.png";
 import snackclub2 from "./images/snackclub/home2.png";

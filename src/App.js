@@ -28,7 +28,7 @@ function App() {
         <div className="right-column">
           <Nav loc={loc}></Nav>
           <Routes>
-            <Route path="/" element={<About/>}></Route>
+            <Route path="/portfolio" element={<About/>}></Route>
             <Route path="/about" element={<About/>}></Route>
             <Route path="/education" element={<Education />}></Route>
             <Route path="/projects" element={<Projects />}></Route>
