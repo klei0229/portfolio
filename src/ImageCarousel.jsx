@@ -43,7 +43,7 @@ const ImageCarousel = (props) => {
           />
         </button>
       </div>
-    <p style={{textAlign:'right'}}>{imageGallery[imageIdx].caption}</p>
+    <p className="caption" style={{textAlign:'right'}}>{imageGallery[imageIdx].caption}</p>
       <div className="bullet-container">
         {imageGallery.map((image, idx) => {
           return (

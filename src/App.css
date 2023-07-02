@@ -332,43 +332,67 @@ section a {
 
 .image {
   width: 95%;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 
-  margin-top:.5rem;
-  margin-bottom:.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
-.bullet-container{
-  display:flex;
+.bullet-container {
+  display: flex;
   justify-content: center;
-
 }
 
-.dot-icon{
-  color:#489294
+.dot-icon {
+  color: #489294;
 }
-.dot-icon-selected{
-  color:white;
+.dot-icon-selected {
+  color: white;
 }
 
-.row-container{
-  display:flex;
+.row-container {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.carousel-button{
-  width:fit-content;
-  height:fit-content;
-  padding:0;
+.carousel-button {
+  width: fit-content;
+  height: fit-content;
+  padding: 0;
   background-color: black;
-  color:#489294;
-  cursor:pointer;
+  color: #489294;
+  cursor: pointer;
 }
-.carousel-button:hover{
+.carousel-button:hover {
   background-color: white;
 }
 
-.carousel-button-icon{
+.carousel-button-icon {
   font-size: 18px;
+}
+
+@media only screen and (max-width: 1000px) {
+  * {
+    /* background-color: red; */
+  }
+
+  .summary {
+    width: calc(50% - 4rem);
+  }
+  .flex-container {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right-column {
+  }
+
+  section {
+    /* background-color: green; */
+  }
 }

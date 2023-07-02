@@ -2,11 +2,12 @@ import React from "react";
 import { summary,links } from "./data";
 import "./App.css";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
+import profile from "./images/profile.jpg"
 
 const Summary = () => {
   return (
     <div className="summary">
-      <img src="https://media.licdn.com/dms/image/D4E03AQFxksiXEgTt2A/profile-displayphoto-shrink_400_400/0/1680534639146?e=1686182400&v=beta&t=YGg7u-5K7Wx7pf-Lj4rp_gVfU9K_s9y590qF6ySICPY"></img>
+      <img className="profile" src={profile}></img>
       <h1>{summary.name}</h1>
       <h3>{summary.subheading}</h3>
       <button className="download-button"><a href="#">Download Resume</a></button>
