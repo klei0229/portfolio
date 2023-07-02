@@ -18,6 +18,8 @@ import capstone1 from "./images/capstone/capstone1.png"
 import capstone2 from "./images/capstone/capstone2.png"
 import capstone3 from "./images/capstone/capstone3.png"
 
+import tasktrasker1 from "./images/tasktracker/dashboard.png"
+
 export const summary = {
   name: "Kevin Lei",
   subheading: "Software Engineer | Based In NYC",
@@ -159,6 +161,28 @@ export const projects = [
       { src: capstone2, caption: "Menu Style Editing Page" },
       { src: capstone3, caption: "Menu Drag and Drop Interface" },
     ],
+  },  {
+    name: "Task Tracker App",
+    subheading: "Lighthall Assignment",
+    description:
+      "A Task Tracker app that helps users stay organized and manage their tasks",
+    technologies: [
+      "JavaScript",
+      "React",
+      "Express",
+      "PostgreSql",
+      "Heroku",
+    ],
+    role: "In this project, I worked with Express.js and SQL to develop server-side code routes that effectively facilitated communication between the client-side code and the database. By leveraging Express.js, I created robust APIs and endpoints that handled data retrieval, storage, and manipulation. Additionally, I took charge of building the entire front-end application using React for building the user interface. I utilized React's component-based architecture to design and implement a responsive and intuitive user interface.",
+    difficulties:
+      "This project was meant to be a refresher for how to build a fullstack application - and so I built the entire application from scratch. Writing the development code was straightforward but I had difficuilties setting up the production version on Heroku. This was the most time consuming part of this project. Coming out of this project, I learned how to connect a client with 'npx create-react-app' with an express server effectively, how to add a proxy to run a server and client on one production domain, and learned more about Heroku's build scripts",
+    demoLink: "https://tasktracker-klei-3f3b520ba110.herokuapp.com/",
+    githubLink: "https://github.com/klei0229/tasktracker-app",
+    images: [
+      { src: tasktrasker1, caption: "Task Tracker Dashboard" },
+    ],
+
+    // images:[snackclub0]
   },
 ];
 
